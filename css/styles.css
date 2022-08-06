@@ -1,0 +1,340 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: #fff;
+}
+.btn{
+    background-color: #ef4a25;
+    padding: 14px 24px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+
+.header{
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem 8%;
+}
+
+.home{
+    background-color: #fff;
+    width: 100%;
+    padding: 4rem 8%;
+}
+.home .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.home .container h1{
+    padding-top: 3rem;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+.home .container p{
+    font-size: 1.2rem;
+    color: #666;
+    padding-bottom: 4rem;
+}
+
+.faq{
+    background-color: #333;
+    position: relative;
+    padding: 4rem 14%;
+}
+.faq .faq-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.faq .container{
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    height: 100vh;
+}
+.faq .container h2{
+    text-align: center;
+    color: #f2f2f0;
+    margin-bottom: 2rem;
+}
+.faq .container .content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.faq .container .content h3{
+    width: 52%;
+    color: #f2f2f0;
+    font-size: 1rem;
+}
+.faq .container .content p{
+    width: 48%;
+    color: #bebebe;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+.faq .button{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+
+.package{
+    background: url(img/bg.png) no-repeat;
+    padding: 4rem 8%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.package .container .content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.package .container .content img{
+    margin-left: 10rem;
+    margin-top: 4rem;
+    height: 36rem;
+}
+.package .container .content .detail{
+    width: 35%;
+    margin-top: 2rem;
+}
+.package .container .content .detail .sub-details{
+    margin-bottom: 3rem;
+}
+.package .container .content .detail .sub-details h4{
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+.package .container .content .detail .sub-details p{
+    color: #666;
+    color: #666;
+    font-size: .9rem;
+    line-height: 26px;
+}
+
+
+
+
+
+
+.footer{
+    padding: 4rem 8%;
+    background-color: #000;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.5rem;
+}
+.footer .box-container img{
+    margin-top: .2rem;
+    margin-bottom: 2rem;
+}
+.footer .box-container .box h3{
+    font-size: 1.2rem;
+    color: #bebebe;
+    padding: 1rem 0;
+}
+.footer .box-container .box p{
+    font-size: 1rem;
+    color: #f2f2f0;
+    line-height: 20px;
+    margin-bottom: 1rem;
+}
+.footer .box-container .box .share a:hover{
+    background-color: var(--dark);
+}
+.footer .box-container .box .link{
+    font-size: 1rem;
+    color: #bebebe;
+    display: block;
+    padding: .7rem 0;
+}
+.footer .box-container .box .link:hover{
+    text-decoration: underline;
+    color: #aa6262;
+}
+.footer .box-container .box .email{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    border: var(--border);
+    font-size: 1.6rem;
+    color: var(--light-color); 
+    margin-bottom: 1rem;
+}
+.footer .credit{
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    font-size: 1rem;
+    color: #f2f2f0;
+}
+.footer .credit a{
+    color: #ef4a25;
+    font-weight: 600;
+}
+
+
+
+
+@media (max-width:1100px){
+    .package .container .content img {
+        margin-left: .2rem;
+        margin-top: 6rem;
+        height: 32rem;
+        width: 50%;
+    }
+}
+@media (max-width:1020px){
+    .package .container .content img {
+        margin-left: -1rem;
+        margin-top: 6rem;
+        height: 32rem;
+        width: 40%;
+    }
+    .package .container .content .detail .sub-details{
+        margin-left: -2rem;
+    }
+}
+
+@media (max-width:991px){
+    .header,
+    .faq,
+    .package,
+    .footer{
+        padding: 1rem 3%;
+    }
+
+    
+}
+@media (max-width:920px){
+    .header,
+    .faq,
+    .package,
+    .footer{
+        padding: 1rem 3%;
+    }
+    .package .container .content .detail{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .package .container .content img {
+        display: none;
+     }
+     .package .container .content .detail .button{
+        text-align: center;
+    }
+}
+
+@media (max-width:768px){
+    .home .container h1 {
+        font-size: 1.2rem;
+        line-height: 26px;
+        margin-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    .home .container p {
+        font-size: .9rem;
+        color: #666;
+        padding-bottom: 2.8rem;
+    }
+    .faq-image .img1{
+        width: 36%;
+        height: 5rem;
+    }
+    .faq-image .img2{
+        width: 20%;
+        height: 5rem;
+    }
+    .faq .container .thumb-up{
+        width: 10rem;
+        height: 6rem;
+    }
+    .faq .container{
+        height: 100vh;
+    }
+    .package .container .content .detail{
+        width: 90%;
+        margin-top: 2rem;
+    }
+   
+}
+@media (max-width:665px){
+    .faq .button{
+        text-align: center;
+        margin-top: 6rem;
+    }
+}
+@media (max-width:578px){
+    .faq .button{
+        text-align: center;
+        margin-top: 13rem;
+    }
+    .faq .container .thumb-up{
+        width: 7rem;
+        height: 4rem;
+    }
+}
+@media (max-width:468px){
+    .faq .button{
+        text-align: center;
+        margin-top: 15rem;
+    }
+    .package .container .content .detail{
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+@media (max-width:425px){
+    .faq .button{
+        text-align: center;
+        margin-top: 17rem;
+    }
+    .faq .container .thumb-up{
+        width: 5rem;
+        height: 3rem;
+    }
+}
+@media (max-width:405px){
+    .faq .button{
+        text-align: center;
+        margin-top: 20rem;
+    }
+
+}
+@media (max-width:399px){
+    .faq .button{
+        text-align: center;
+        margin-top: 23rem;
+    }
+
+}
+@media (max-width:345px){
+    .faq .button{
+        text-align: center;
+        margin-top: 48rem;
+    }
+
+}
